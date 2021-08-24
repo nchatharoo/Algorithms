@@ -12,10 +12,13 @@ For example, 2021 is not a leap year, but 2020 is. 1900 is not a leap year, but 
 // year divisible by 400 = leap
 // any other year is not leap
 
+func isLeap(_ year: Int) -> Bool {
+    return false
+}
 class LeapYearTests : XCTestCase {
     
     func test_evenlyDivisible_by4_isLeap() {
-        
+        XCTAssertTrue(isLeap(2020))
     }
     
     func test_evenlyDivisible_by100_isNotLeap() {
@@ -31,4 +34,5 @@ class LeapYearTests : XCTestCase {
     }
 }
 
+LeapYearTests.defaultTestSuite.run()
 //: [Next](@next)
