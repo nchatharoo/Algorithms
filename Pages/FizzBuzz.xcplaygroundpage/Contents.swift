@@ -20,20 +20,26 @@ class FizzBuzzTests: XCTestCase {
     
     func test_print_defaultCase() {
         
-        let sut = FizzBuzzPrinter()
-        
-        let result = sut.print(1)
-        
-        XCTAssertEqual(result, "1")
+        expect(1, withResult: "1")
     }
     
     func test_print_multipleOfThree() {
-        let sut = FizzBuzzPrinter()
         
-        let result = sut.print(3)
-        
-        XCTAssertEqual(result, "Fizz")
+        expect(3, withResult: "Fizz")
     }
+}
+
+// Helpers
+
+private func makeSUT() -> FizzBuzzPrinter {
+    return FizzBuzzPrinter()
+}
+
+private func expect(_ number: Int, withResult result: String) {
+    
+    let sut = FizzBuzzPrinter()
+
+    XCTAssertEqual(sut.print(number), result)
 }
 
 FizzBuzzTests.defaultTestSuite.run()
