@@ -11,7 +11,7 @@ class FizzBuzzPrinter {
     func print(_ number: Int) -> String {
         if number % 3 == 0 {
             return "Fizz"
-        } else if number == 5 {
+        } else if number % 5 == 0 {
             return "Buzz"
         }
         return "\(number)"
@@ -44,7 +44,7 @@ class FizzBuzzTests: XCTestCase {
     }
     
     func test_printBuzz_numberIsMultipleOfFive() {
-        let numbers = [10, 15, 20]
+        let numbers = [10, 20, 35]
         
         numbers.forEach({ number in
             expect(number, withResult: "Buzz")
