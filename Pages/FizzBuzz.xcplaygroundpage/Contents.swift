@@ -23,12 +23,12 @@ class FizzBuzzTests: XCTestCase {
         expect(1, withResult: "1")
     }
     
-    func test_print_numberIsThree() {
+    func test_printFizz_numberIsThree() {
         
         expect(3, withResult: "Fizz")
     }
     
-    func test_print_numberIsMultipleOfThree() {
+    func test_printFizz_numberIsMultipleOfThree() {
         let numbers = [6, 9, 12]
 
         numbers.forEach({ number in
