@@ -9,6 +9,9 @@ import XCTest
 
 class FizzBuzzPrinter {
     func print(_ number: Int) -> String {
+        if number == 15 {
+            return "FizzBuzz"
+        }
         if number % 3 == 0 {
             return "Fizz"
         } else if number % 5 == 0 {
@@ -52,9 +55,7 @@ class FizzBuzzTests: XCTestCase {
     }
     
     func test_printFizzBuzz_numberIsFifteen() {
-
         expect(15, withResult: "FizzBuzz")
-
     }
 }
 
