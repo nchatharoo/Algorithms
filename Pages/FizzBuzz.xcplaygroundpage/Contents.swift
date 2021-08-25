@@ -7,8 +7,8 @@ import XCTest
  For numbers which are multiples of both three and five, print "FizzBuzz".
  */
 
-class FizzBuzzPrinter {
-    func print(_ number: Int) -> String {
+class FizzBuzzParser {
+    func parse(_ number: Int) -> String {
         
         if number.isMultiple(of: 15) {
             return "FizzBuzz"
@@ -71,16 +71,16 @@ class FizzBuzzTests: XCTestCase {
 
 private func expect(_ number: Int, withResult result: String) {
     
-    let sut = FizzBuzzPrinter()
+    let sut = FizzBuzzParser()
 
-    XCTAssertEqual(sut.print(number), result)
+    XCTAssertEqual(sut.parse(number), result)
 }
 
 FizzBuzzTests.defaultTestSuite.run()
 
 
-let printer = FizzBuzzPrinter()
+let parser = FizzBuzzParser()
 
 for number in 1...100 {
-    print(printer.print(number))
+    print(parser.parse(number))
 }
