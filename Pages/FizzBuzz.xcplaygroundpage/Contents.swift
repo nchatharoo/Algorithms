@@ -77,3 +77,10 @@ private func expect(_ number: Int, withResult result: String) {
 }
 
 FizzBuzzTests.defaultTestSuite.run()
+
+
+let printer = FizzBuzzPrinter()
+
+for number in 1...100 {
+    print(printer.print(number))
+}
