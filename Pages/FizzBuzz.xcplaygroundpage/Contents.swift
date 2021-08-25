@@ -27,6 +27,14 @@ class FizzBuzzTests: XCTestCase {
         
         expect(3, withResult: "Fizz")
     }
+    
+    func test_print_numberIsMultipleOfThree() {
+        let numbers = [6, 9, 12]
+
+        numbers.forEach({ number in
+            expect(number, withResult: "Fizz")
+        })
+    }
 }
 
 // Helpers
