@@ -42,6 +42,14 @@ class FizzBuzzTests: XCTestCase {
         
         expect(5, withResult: "Buzz")
     }
+    
+    func test_printBuzz_numberIsMultipleOfFive() {
+        let numbers = [10, 15, 20]
+        
+        numbers.forEach({ number in
+            expect(number, withResult: "Buzz")
+        })
+    }
 }
 
 // Helpers
