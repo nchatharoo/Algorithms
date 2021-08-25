@@ -35,6 +35,11 @@ class FizzBuzzTests: XCTestCase {
             expect(number, withResult: "Fizz")
         })
     }
+    
+    func test_printBuzz_numberIsFive() {
+        
+        expect(5, withResult: "Buzz")
+    }
 }
 
 // Helpers
