@@ -23,7 +23,7 @@ class FizzBuzzTests: XCTestCase {
         expect(1, withResult: "1")
     }
     
-    func test_print_multipleOfThree() {
+    func test_print_numberIsThree() {
         
         expect(3, withResult: "Fizz")
     }
