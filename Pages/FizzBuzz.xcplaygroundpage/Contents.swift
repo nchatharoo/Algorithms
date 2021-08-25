@@ -9,12 +9,12 @@ import XCTest
 
 class FizzBuzzPrinter {
     func print(_ number: Int) -> String {
-        if number % 15 == 0 {
+        
+        if number.isMultiple(of: 15) {
             return "FizzBuzz"
-        }
-        if number % 3 == 0 {
+        } else if number.isMultiple(of: 3) {
             return "Fizz"
-        } else if number % 5 == 0 {
+        } else if number.isMultiple(of: 5) {
             return "Buzz"
         }
         return "\(number)"
