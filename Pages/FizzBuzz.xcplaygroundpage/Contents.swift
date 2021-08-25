@@ -9,7 +9,10 @@ import XCTest
 
 class FizzBuzzPrinter {
     func print(_ number: Int) -> String {
-        return "1"
+        if number == 3 {
+            return "Fizz"
+        }
+        return "\(number)"
     }
 }
 
@@ -22,6 +25,14 @@ class FizzBuzzTests: XCTestCase {
         let result = sut.print(1)
         
         XCTAssertEqual(result, "1")
+    }
+    
+    func test_print_multipleOfThree() {
+        let sut = FizzBuzzPrinter()
+        
+        let result = sut.print(3)
+        
+        XCTAssertEqual(result, "Fizz")
     }
 }
 
