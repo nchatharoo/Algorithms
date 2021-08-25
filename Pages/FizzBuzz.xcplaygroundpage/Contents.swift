@@ -9,7 +9,7 @@ import XCTest
 
 class FizzBuzzPrinter {
     func print(_ number: Int) -> String {
-        if number == 3 {
+        if number % 3 == 0 {
             return "Fizz"
         }
         return "\(number)"
