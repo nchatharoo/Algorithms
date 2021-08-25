@@ -69,10 +69,6 @@ class FizzBuzzTests: XCTestCase {
 
 // Helpers
 
-private func makeSUT() -> FizzBuzzPrinter {
-    return FizzBuzzPrinter()
-}
-
 private func expect(_ number: Int, withResult result: String) {
     
     let sut = FizzBuzzPrinter()
