@@ -3,5 +3,6 @@
     <pages>
         <page name='Leap'/>
         <page name='FizzBuzz'/>
+        <page name='Binary Search'/>
     </pages>
 </playground>
