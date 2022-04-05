@@ -4,5 +4,6 @@
         <page name='Leap'/>
         <page name='FizzBuzz'/>
         <page name='Binary Search'/>
+        <page name='Selection sort'/>
     </pages>
 </playground>
